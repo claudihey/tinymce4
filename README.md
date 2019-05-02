@@ -41,3 +41,25 @@ image_class_list: [
     {title: 'Responsive', value: 'img-responsive'}
 ]
 ```
+### Ergänzung des Color-Pickers
+
+```selector: 'textarea.tinyMCEEditor',
+file_browser_callback: redaxo5FileBrowser,
+plugins: 'advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table contextmenu paste code textcolor',
+toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | forecolor backcolor',
+
+textcolor_map: [
+"000000", "Black",
+"FF6600", "Orange",
+"008000", "Green",
+"0000FF", "Blue",
+"808080", "Gray",
+"FF0000", "Red",
+"FFFFFF", "White"
+],
+
+convert_urls: false,
+content_css: '../assets/addons/tinymce4/bootstrap/css/bootstrap.min.css'
+}```
+
+Mit textcolor_map kann man eigene Farben definieren, lässt man den Eintrag weg, werden Standard-Farben verwendet.
